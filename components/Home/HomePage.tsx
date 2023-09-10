@@ -7,11 +7,11 @@ type Props = {}
 
 const HomePage = (props: Props) => {
   return (
-    <>
+    <main>
       <Welcome />
       <AboutUs />
       <OurProducts />
-    </>
+    </main>
   )
 }
 
