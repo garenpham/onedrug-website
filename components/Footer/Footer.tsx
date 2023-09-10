@@ -8,39 +8,39 @@ import Logo from '../shared/Logo/Logo'
 
 type Props = {}
 
-const FooterMobile = () => {
-  return <footer></footer>
-}
-
 function Footer({}: Props) {
   const pathname = usePathname()
 
-  if (pathname === '/contact') {
-    return <FooterMobile />
-  }
+  const isContactSection = pathname === '/contact'
 
   const style = {
     link: `text-[14px] hover:text-primary active:scale-95 transition-transform ease-in cursor-pointer`,
   }
   return (
     <footer className='relative w-screen bg-footer_bg'>
-      <div className={`absolute w-screen flex justify-center -top-[128.5px]`}>
-        <div
-          className={`px-[254px] py-[47px] bg-primary text-white rounded-[20px] flex flex-col items-center text-center`}>
+      {!isContactSection && (
+        <div className={`absolute w-screen flex justify-center -top-[128.5px]`}>
           <div
-            className={`w-[631px] mb-[32px] text-[36px] font-[600] leading-[120%]`}>
-            Get in touch with us to learn more about how OneDrug is reshaping
-            the future of healthcare
-          </div>
+            className={`px-[254px] py-[47px] bg-primary text-white rounded-[20px] flex flex-col items-center text-center`}>
+            <div
+              className={`w-[631px] mb-[32px] text-[36px] font-[600] leading-[120%]`}>
+              Get in touch with us to learn more about how OneDrug is reshaping
+              the future of healthcare
+            </div>
 
-          <Link
-            href='/contact'
-            className={`px-[51px] py-[15px] rounded-[3px] border border-white w-fit text-[18px] font-[500] cursor-pointer active:scale-95 transition-transform ease-in`}>
-            Contact us
-          </Link>
+            <Link
+              href='/contact'
+              className={`px-[51px] py-[15px] rounded-[3px] border border-white w-fit text-[18px] font-[500] cursor-pointer active:scale-95 transition-transform ease-in`}>
+              Contact us
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className={`mx-[--root-margin] pt-[251px] pb-[48px]`}>
+      )}
+
+      <div
+        className={`mx-[--root-margin] ${
+          isContactSection ? 'pt-[111px]' : 'pt-[251px]'
+        } pb-[48px]`}>
         <div className={`w-full flex justify-between`}>
           <div>
             <div
@@ -48,7 +48,7 @@ function Footer({}: Props) {
               <Logo size='w-[135px] h-[115px]' />
             </div>
             <div
-              className={`w-[315px] text-gray_5 text-[14px] leading-[120%] mt-[16px]`}>
+              className={`w-[315px] text-gray_8 text-[14px] leading-[120%] mt-[16px]`}>
               Welcome to OneDrug, where we&apos;re revolutionizing healthcare
               with cutting-edge smart technology solutions
             </div>

@@ -26,7 +26,7 @@ function Product({ src, title, description }: Props) {
           className={`w-[277px] text-gray text-[20px] font-[500] mt-[36px] leading-[120%]`}>
           {title}
         </div>
-        <div className={`my-[20px] w-[276px] text-gray_5`}>{description}</div>
+        <div className={`my-[20px] w-[276px] text-gray_8`}>{description}</div>
 
         <button
           className={`text-primary text-[18px] font-[500] flex items-center gap-[4px] hover:text-white active:scale-95 transition-transform ease-in`}>
