@@ -4,7 +4,7 @@ import * as React from 'react'
 import { ImSpinner8 } from 'react-icons/im'
 
 const buttonVariants = cva(
-  'shrink-0 rounded-[3px] active:scale-95 inline-flex items-center justify-center border disabled:pointer-events-none disabled:text-gray_3 disabled:border-gray_2 disabled:bg-white disabled:border transition-transform ease-in', //these are the base styles
+  `shrink-0 rounded-[3px] inline-flex items-center justify-center border disabled:pointer-events-none disabled:text-gray_3 disabled:border-gray_2 disabled:bg-white disabled:border active:scale-95 transition-transform ease-in`, //these are the base styles
   {
     variants: {
       variant: {
@@ -70,3 +70,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = 'Button'
 
 export { Button }
+

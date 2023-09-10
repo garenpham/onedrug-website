@@ -8,6 +8,7 @@
   box-sizing: border-box;
   --root-margin: 11%
 }
+
 html {
   scroll-behavior: smooth;
 }

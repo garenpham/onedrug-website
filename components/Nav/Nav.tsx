@@ -17,7 +17,7 @@ const Nav = (props: Props) => {
 
   return (
     <div className='px-[--root-margin] flex items-center justify-between bg-gray'>
-      <Logo height={72} width={107} />
+      <Logo size='h-[72px] w-[107px]' />
       <div className={`flex items-center gap-[20px]`}>
         <Link
           href={`/`}
