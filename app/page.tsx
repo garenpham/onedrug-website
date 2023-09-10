@@ -1,3 +1,11 @@
+import HomePage from '@/components/Home/HomePage'
+import Nav from '@/components/Nav/Nav'
+
 export default function Home() {
-  return <main>hello</main>
+  return (
+    <main>
+      <Nav />
+      <HomePage />
+    </main>
+  )
 }

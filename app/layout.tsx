@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
+  variable: '--font-roboto',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'OneDrug',
@@ -19,11 +23,11 @@ export default function RootLayout({
       <head>
         <link
           rel='icon'
-          href='https://res.cloudinary.com/dwqpulybv/image/upload/v1690262710/shared-assets/cmxiy2cxqrduhw6pw4xs.svg'
+          href='https://res.cloudinary.com/dwqpulybv/image/upload/v1694304448/shared-assets/landing%20page/Logo_lr8o8o.svg'
           sizes='any'
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   )
 }
