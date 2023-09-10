@@ -1,14 +1,12 @@
-import { Button } from '@/components/shared/Buttons/Button'
 import Image from 'next/image'
 import React from 'react'
-import { GoArrowRight } from 'react-icons/go'
 import { HiArrowDown } from 'react-icons/hi'
 
 type Props = {}
 
 const Welcome = (props: Props) => {
   return (
-    <section className='px-[--root-margin] py-[34px] flex items-center justify-between relative'>
+    <section className='px-[--root-margin] py-[100px] flex items-center justify-between relative'>
       <div>
         <div
           className={`px-[10px] py-[17px] w-fit text-primary bg-primary_light text-[14px] font-[500] rounded-[5px] leading-[120%]`}>
@@ -24,9 +22,6 @@ const Welcome = (props: Props) => {
           Welcome to OneDrug, where we&apos;re revolutionizing healthcare with
           cutting-edge smart technology solutions
         </div>
-        <Button>
-          Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
-        </Button>
       </div>
 
       <Image
