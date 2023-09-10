@@ -17,7 +17,7 @@ const Nav = (props: Props) => {
 
   return (
     <div className='px-[--root-margin] flex items-start justify-between bg-gray'>
-      <div className={`w-[300px] h-[150px] flex items-center justify-center`}>
+      <div className={`w-[300px] h-[170px] flex items-center justify-center`}>
         <Logo />
       </div>
       <div className={`flex items-center gap-[20px]`}>
