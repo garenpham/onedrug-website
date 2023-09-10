@@ -119,7 +119,7 @@ function Footer({}: Props) {
         <div className='my-[44px] w-full h-[2px] bg-gray_4' />
 
         <div className={``}>
-          ©Copyright 2023 OneDrug Inc | All Rights Reserved
+          ©Copyright 2023 OneDrug Inc. | All Rights Reserved
         </div>
       </div>
     </footer>
