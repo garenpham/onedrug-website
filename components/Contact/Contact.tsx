@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -7,6 +9,12 @@ import { Button } from '../shared/Buttons/Button'
 type Props = {}
 
 function Contact({}: Props) {
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
   const style = {
     label: `text-gray_7 font-[600] mb-[5px]`,
     input: `w-[482px] h-[52px] border border-gray_5 rounded-[8px] outline-none px-[20px] py-[12px] mb-[18px] focus:border-primary`,
@@ -67,11 +75,25 @@ function Contact({}: Props) {
             <label htmlFor='name' className={style.label}>
               Name
             </label>
-            <input id='name' type='text' className={style.input} />
+            <input
+              id='name'
+              type='text'
+              className={style.input}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+            />
             <label htmlFor='email' className={style.label}>
               Email Address
             </label>
-            <input id='email' type='email' className={style.input} />
+            <input
+              id='email'
+              type='email'
+              className={style.input}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
 
             <label htmlFor='message' className={style.label}>
               Message
@@ -79,12 +101,18 @@ function Contact({}: Props) {
             <textarea
               id='message'
               className={`${style.input} !h-[122px] resize-none`}
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
             />
           </form>
 
-          <Button size={'none'} className='w-full h-[52px]'>
-            Send
-          </Button>
+          <Link
+            href={`mailto:info@onedrug.co?subject=Inquiry by ${formData.name}&body=${formData.message}`}>
+            <Button form='contactus' size={'none'} className='w-full h-[52px]'>
+              Send
+            </Button>
+          </Link>
         </div>
       </div>
     </main>
