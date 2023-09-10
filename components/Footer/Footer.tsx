@@ -59,11 +59,15 @@ function Footer({}: Props) {
                 QUICK LINKS
               </div>
               <div className={`flex flex-col items-center gap-[16px]`}>
-                <div className={style.link}>ABOUT</div>
-                <div className={style.link}>PRODUCTS</div>
-                <div className={style.link}>CONTACT</div>
-                <div className={style.link}>PRIVACY POLICY</div>
-                <div className={style.link}>T&CS</div>
+                <Link href='/#about' className={style.link}>
+                  ABOUT
+                </Link>
+                <Link href='/products' className={style.link}>
+                  PRODUCTS
+                </Link>
+                <Link href='/contact' className={style.link}>
+                  CONTACT
+                </Link>
               </div>
             </div>
 

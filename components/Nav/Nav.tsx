@@ -9,9 +9,9 @@ type Props = {}
 
 const Nav = (props: Props) => {
   const style = {
-    active: `bg-primary text-white hover:bg-primary`,
+    active: `bg-primary text-white hover:bg-primary font-[600]`,
     base: `px-[24px] py-[44px]`,
-    inactive: `hover:bg-primary_light`,
+    inactive: `hover:bg-primary_light font-[500]`,
   }
   const pathname = usePathname()
 
@@ -28,7 +28,7 @@ const Nav = (props: Props) => {
           }`}>
           Home
         </Link>
-        <Link href={`#about`} className={`${style.base} ${style.inactive}`}>
+        <Link href={`/#about`} className={`${style.base} ${style.inactive}`}>
           About
         </Link>
         <Link
