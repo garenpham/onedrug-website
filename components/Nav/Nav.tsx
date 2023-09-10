@@ -16,8 +16,10 @@ const Nav = (props: Props) => {
   const pathname = usePathname()
 
   return (
-    <div className='px-[--root-margin] flex items-center justify-between bg-gray'>
-      <Logo size='h-[72px] w-[107px]' />
+    <div className='px-[--root-margin] flex items-start justify-between bg-gray'>
+      <div className={`w-[300px] h-[150px] flex items-center justify-center`}>
+        <Logo />
+      </div>
       <div className={`flex items-center gap-[20px]`}>
         <Link
           href={`/`}

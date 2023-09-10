@@ -9,8 +9,9 @@ function OurProducts({}: Props) {
     <div className='pt-[100px] pb-[229px] flex flex-col items-center'>
       <div className={`font-[500] text-secondary`}>OUR PRODUCTS</div>
       <div
-        className={`my-[12px] font-[600] text-[24px] w-[334px] text-center leading-[120%]`}>
-        A Startup Focused on Advancing Precision Medicine
+        className={`my-[12px] font-[600] text-[24px] w-[360px] text-center leading-[120%]`}>
+        We are focused on making personalized precision medicine possible across
+        the globe
       </div>
       <Image
         alt='icon'

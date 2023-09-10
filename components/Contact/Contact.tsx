@@ -78,7 +78,7 @@ function Contact({}: Props) {
             </label>
             <textarea
               id='message'
-              className={`${style.input} h-[122px] resize-none`}
+              className={`${style.input} !h-[122px] resize-none`}
             />
           </form>
 

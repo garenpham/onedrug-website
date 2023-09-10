@@ -17,11 +17,12 @@ function Footer({}: Props) {
     link: `text-[14px] hover:text-primary active:scale-95 transition-transform ease-in cursor-pointer`,
   }
   return (
-    <footer className='relative w-screen bg-footer_bg'>
+    <footer className='relative w-screen bg-primary_light'>
       {!isContactSection && (
-        <div className={`absolute w-screen flex justify-center -top-[128.5px]`}>
+        <div
+          className={`absolute w-screen flex justify-center -top-[128.5px] text-white`}>
           <div
-            className={`px-[254px] py-[47px] bg-primary text-white rounded-[20px] flex flex-col items-center text-center`}>
+            className={`px-[254px] py-[47px] bg-footer_bg  rounded-[20px] flex flex-col items-center text-center`}>
             <div
               className={`w-[631px] mb-[32px] text-[36px] font-[600] leading-[120%]`}>
               Get in touch with us to learn more about how OneDrug is reshaping
@@ -42,19 +43,18 @@ function Footer({}: Props) {
           isContactSection ? 'pt-[111px]' : 'pt-[251px]'
         } pb-[48px]`}>
         <div className={`w-full flex justify-between`}>
-          <div>
+          <div className=''>
             <div
-              className={`w-[88px] h-[65px] bg-white flex items-center justify-center`}>
-              <Logo size='w-[135px] h-[115px]' />
+              className={`w-[300px] h-[150px] flex items-center justify-center`}>
+              <Logo />
             </div>
-            <div
-              className={`w-[315px] text-gray_8 text-[14px] leading-[120%] mt-[16px]`}>
+            <div className={`w-[315px] text-[14px] leading-[120%] mt-[24px]`}>
               Welcome to OneDrug, where we&apos;re revolutionizing healthcare
               with cutting-edge smart technology solutions
             </div>
           </div>
           <div className={`flex gap-[61px]`}>
-            <div className='text-gray'>
+            <div className=''>
               <div className={`mb-[20px] text-[18px] font-[500]`}>
                 QUICK LINKS
               </div>
@@ -69,41 +69,45 @@ function Footer({}: Props) {
 
             <div className={`flex gap-[40px]`}>
               <Link
-                href='#'
+                href='https://www.facebook.com/people/OneDrug/100089842672293/?mibextid=LQQJ4d'
+                target='_blank'
                 className='active:scale-95 transition-transform ease-in'>
                 <Image
-                  alt='socials'
-                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694326986/shared-assets/landing%20page/pic1_tqdnpy.svg'
+                  alt='facebook'
+                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694337309/shared-assets/landing%20page/pic1_nyhdg5.svg'
                   width={32}
                   height={32}
                 />
               </Link>
               <Link
-                href='#'
+                href='https://ca.linkedin.com/company/onedrug'
+                target='_blank'
                 className='active:scale-95 transition-transform ease-in'>
                 <Image
-                  alt='socials'
-                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694327000/shared-assets/landing%20page/pic1_j7dp5z.svg'
+                  alt='linkedin'
+                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694337324/shared-assets/landing%20page/pic1_vuzyx6.svg'
                   width={32}
                   height={32}
                 />
               </Link>
               <Link
-                href='#'
+                href='https://twitter.com/OneDrug__'
+                target='_blank'
                 className='active:scale-95 transition-transform ease-in'>
                 <Image
-                  alt='socials'
-                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694327023/shared-assets/landing%20page/pic1_v7kueh.svg'
+                  alt='X'
+                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694337338/shared-assets/landing%20page/pic1_r49zjn.svg'
                   width={32}
                   height={32}
                 />
               </Link>
               <Link
-                href='#'
+                href='https://www.instagram.com/onedrug6/'
+                target='_blank'
                 className='active:scale-95 transition-transform ease-in'>
                 <Image
-                  alt='socials'
-                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694327038/shared-assets/landing%20page/pic1_qzexnf.svg'
+                  alt='Instagram'
+                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694337351/shared-assets/landing%20page/pic1_an1wqa.svg'
                   width={32}
                   height={32}
                 />
@@ -114,7 +118,7 @@ function Footer({}: Props) {
 
         <div className='my-[44px] w-full h-[2px] bg-gray_4' />
 
-        <div className={`text-white`}>
+        <div className={``}>
           ©Copyright 2023 OneDrug Inc | All Rights Reserved
         </div>
       </div>

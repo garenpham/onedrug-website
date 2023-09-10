@@ -7,7 +7,7 @@ type Props = {}
 
 function AboutUs({}: Props) {
   return (
-    <div className='flex justify-center py-[100px] bg-gray_2'>
+    <div id='about' className='flex justify-center py-[100px] bg-gray_2'>
       <div className={`flex items-center gap-[80px]`}>
         <div className={`relative w-[413px] h-[392px]`}>
           <div className={`w-[368px] h-[344px] bg-slate-400 relative z-10`}>
@@ -37,8 +37,9 @@ function AboutUs({}: Props) {
         <div>
           <div className={`font-[500] text-secondary`}>ABOUT US</div>
           <div
-            className={`my-[12px] text-[24px] font-[600] w-[334px] leading-[120%]`}>
-            A Startup Focused on Advancing Precision Medicine
+            className={`my-[12px] text-[24px] font-[600] w-[360px] leading-[120%]`}>
+            We are focused on making personalized precision medicine possible
+            across the globe
           </div>
           <Image
             alt='icon'
@@ -53,10 +54,10 @@ function AboutUs({}: Props) {
           </div>
           <div
             className={`mb-[20px] text-gray_4 text-[18px] w-[473px] leading-[120%]`}>
-            We help the global healthcare by developing smart point-of-care
-            devices for the rapid identification of patients that will respond
-            well to drugs due to genetic defects in clinically relevant drug
-            processing proteins.
+            We help the global healthcare by developing smart technologies for
+            the rapid identification of patients that will not respond well to
+            drugs due to genetic defects in clinically relevant drug processing
+            proteins.
           </div>
           <Button>
             Learn more <GoArrowRight className='ml-[4px] text-[24px]' />

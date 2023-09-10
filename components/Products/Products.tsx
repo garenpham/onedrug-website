@@ -1,5 +1,6 @@
 import { Button } from '@/components/shared/Buttons/Button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { GoArrowRight } from 'react-icons/go'
 
@@ -76,14 +77,16 @@ function Products({}: Props) {
               </div>
             </div>
           </div>
-          <Button>
-            Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
-          </Button>
+          <Link href='mailto:probeit@onedrug.co' target='_blank'>
+            <Button>
+              Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
+            </Button>
+          </Link>
         </div>
         <div className={`w-[549px] h-[611px]`}>
           <Image
             alt='device'
-            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694323530/shared-assets/landing%20page/281e0d62ad0178adc58758096382707a_pwkipj.jpg'
+            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694323760/shared-assets/landing%20page/f4e172a83414baeccace5f71cdd78d525f3161fa_bnb6yc.png'
             height={0}
             width={0}
             sizes='100%'
@@ -96,7 +99,7 @@ function Products({}: Props) {
         <div className={`w-[549px] h-[611px]`}>
           <Image
             alt='device'
-            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694323760/shared-assets/landing%20page/f4e172a83414baeccace5f71cdd78d525f3161fa_bnb6yc.png'
+            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694323530/shared-assets/landing%20page/281e0d62ad0178adc58758096382707a_pwkipj.jpg'
             height={0}
             width={0}
             sizes='100%'
@@ -195,9 +198,12 @@ function Products({}: Props) {
               </div>
             </div>
           </div>
-          <Button>
-            Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
-          </Button>
+
+          <Link href='mailto:onegen@onedrug.co' target='_blank'>
+            <Button>
+              Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
