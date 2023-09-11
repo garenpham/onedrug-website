@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { HiArrowDown } from 'react-icons/hi'
+import Gallery from './Gallery/Gallery'
 
 type Props = {}
 
@@ -24,17 +26,12 @@ const Welcome = (props: Props) => {
         </div>
       </div>
 
-      <Image
-        alt='welcome'
-        src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694312742/shared-assets/landing%20page/a91fee560b1323924e7595bc0451342e_kf2j9y.png'
-        height={444}
-        width={528}
-        className='rounded-[40px]'
-      />
-      <div
+      <Gallery/>
+      <Link
+        href='/#about'
         className={`absolute bottom-0 left-[50%] h-[40px] w-[24px] rounded-[100px] bg-primary_light text-primary flex items-center justify-center border border-transparent hover:border-primary cursor-pointer active:scale-95 transition-transform ease-in`}>
         <HiArrowDown />
-      </div>
+      </Link>
     </section>
   )
 }
