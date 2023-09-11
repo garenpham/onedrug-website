@@ -1,5 +1,6 @@
 import { Button } from '@/components/shared/Buttons/Button'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { GoArrowRight } from 'react-icons/go'
 
@@ -59,9 +60,11 @@ function AboutUs({}: Props) {
             drugs due to genetic defects in clinically relevant drug processing
             proteins.
           </div>
-          <Button>
-            Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
-          </Button>
+          <Link href='/about'>
+            <Button>
+              Learn more <GoArrowRight className='ml-[4px] text-[24px]' />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
