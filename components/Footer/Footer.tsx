@@ -22,7 +22,7 @@ function Footer({}: Props) {
         <div
           className={`absolute w-screen flex justify-center -top-[128.5px] text-white`}>
           <div
-            className={`px-[254px] py-[47px] bg-footer_bg  rounded-[20px] flex flex-col items-center text-center`}>
+            className={`px-[254px] py-[47px] bg-gray_4  rounded-[20px] flex flex-col items-center text-center`}>
             <div
               className={`w-[631px] mb-[32px] text-[36px] font-[600] leading-[120%]`}>
               Get in touch with us to learn more about how OneDrug is reshaping
@@ -71,7 +71,7 @@ function Footer({}: Props) {
               </div>
             </div>
 
-            <div className={`flex gap-[40px]`}>
+            <div className={`flex gap-[40px] h-fit items-center`}>
               <Link
                 href='https://www.facebook.com/people/OneDrug/100089842672293/?mibextid=LQQJ4d'
                 target='_blank'
@@ -114,6 +114,17 @@ function Footer({}: Props) {
                   src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694337351/shared-assets/landing%20page/pic1_an1wqa.svg'
                   width={32}
                   height={32}
+                />
+              </Link>
+              <Link
+                href='mailto:info@onedrug.co'
+                target='_blank'
+                className='active:scale-95 transition-transform ease-in'>
+                <Image
+                  alt='Email'
+                  src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694393111/shared-assets/landing%20page/pic1_zvrynn.svg'
+                  width={27}
+                  height={33}
                 />
               </Link>
             </div>

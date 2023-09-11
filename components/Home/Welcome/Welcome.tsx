@@ -15,7 +15,7 @@ const Welcome = (props: Props) => {
         <div
           className={`w-[459px] mt-[12px] mb-[20px] text-[36px] font-[600] `}>
           Enabling Worldwide Access to Personalized Precision{' '}
-          <span className={`text-primary`}>Medicine.</span>
+          <span className={`text-primary`}>Medicine</span>
         </div>
         <div
           className={`mb-[32px] w-[414px] text-gray_1 text-[18px] leading-[120%]`}>

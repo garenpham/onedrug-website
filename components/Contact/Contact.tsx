@@ -56,17 +56,7 @@ function Contact({}: Props) {
         </div>
 
         <div className={`px-[45px] pt-[37px] pb-[49px] w-[571px] bg-white`}>
-          <div className={`flex items-center justify-between`}>
-            <div className={`text-[32px] font-[700]`}>Get in touch</div>
-
-            <Link
-              href='mailto:info@onedrug.co'
-              target='_blank'
-              className={`flex items-center gap-[12px] text-primary cursor-pointer`}>
-              <IoMail className='text-[18px]' />
-              <div className='underline text-[16px]'>info@onedrug.co</div>
-            </Link>
-          </div>
+          <div className={`text-[32px] font-[700]`}>Get in touch</div>
 
           <form
             action='#'

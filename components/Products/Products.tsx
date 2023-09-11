@@ -19,7 +19,7 @@ function Products({}: Props) {
 
             <div
               className={`mt-[15px] mb-[10px] w-[515px] text-[36px] font-[600]`}>
-              Smart Point-of-Care Pharamacogenetic Test Device.
+              Smart Point-of-Care Pharamacogenetic Test Device
             </div>
 
             <div className={`text-gray_9 w-[486px]`}>
@@ -85,8 +85,8 @@ function Products({}: Props) {
         </div>
         <div className={`w-[549px] h-[611px]`}>
           <Image
-            alt='device'
-            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694323760/shared-assets/landing%20page/f4e172a83414baeccace5f71cdd78d525f3161fa_bnb6yc.png'
+            alt='Device'
+            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694393596/shared-assets/landing%20page/8f20d9460fc09617f54e6ccccc1d76a8_fje7tn.jpg'
             height={0}
             width={0}
             sizes='100%'
@@ -98,8 +98,8 @@ function Products({}: Props) {
       <div className={`mt-[140px] mb-[355px] flex gap-[67px]`}>
         <div className={`w-[549px] h-[611px]`}>
           <Image
-            alt='device'
-            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694323530/shared-assets/landing%20page/281e0d62ad0178adc58758096382707a_pwkipj.jpg'
+            alt='Application'
+            src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694393608/shared-assets/landing%20page/200c6e40dfd7cf8e3cfa9623119f442f_cxcjj7.jpg'
             height={0}
             width={0}
             sizes='100%'
