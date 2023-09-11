@@ -33,7 +33,7 @@ function Contact({}: Props) {
       </div>
 
       <div
-        className={`text-center text-primary_1 font-[700] text-[32px] relative z-10`}>
+        className={`text-center text-secondary font-[700] text-[32px] relative z-10 uppercase`}>
         Contact Us
       </div>
 
