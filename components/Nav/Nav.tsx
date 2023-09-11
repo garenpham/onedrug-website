@@ -28,7 +28,11 @@ const Nav = (props: Props) => {
           }`}>
           Home
         </Link>
-        <Link href={`/#about`} className={`${style.base} ${style.inactive}`}>
+        <Link
+          href={`/about`}
+          className={`${style.base} ${
+            pathname === '/about' ? style.active : style.inactive
+          }`}>
           About
         </Link>
         <Link

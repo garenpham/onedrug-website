@@ -11,14 +11,14 @@ type Props = {}
 function Footer({}: Props) {
   const pathname = usePathname()
 
-  const isContactSection = pathname === '/contact'
+  const isCardRemoved = pathname === '/contact' || pathname === '/about'
 
   const style = {
     link: `text-[14px] hover:text-primary active:scale-95 transition-transform ease-in cursor-pointer`,
   }
   return (
     <footer className='relative w-screen bg-primary_light'>
-      {!isContactSection && (
+      {!isCardRemoved && (
         <div
           className={`absolute w-screen flex justify-center -top-[128.5px] text-white`}>
           <div
@@ -40,7 +40,7 @@ function Footer({}: Props) {
 
       <div
         className={`mx-[--root-margin] ${
-          isContactSection ? 'pt-[111px]' : 'pt-[251px]'
+          isCardRemoved ? 'pt-[111px]' : 'pt-[251px]'
         } pb-[48px]`}>
         <div className={`w-full flex justify-between`}>
           <div className=''>
@@ -59,7 +59,7 @@ function Footer({}: Props) {
                 QUICK LINKS
               </div>
               <div className={`flex flex-col items-center gap-[16px]`}>
-                <Link href='/#about' className={style.link}>
+                <Link href='/about' className={style.link}>
                   ABOUT
                 </Link>
                 <Link href='/products' className={style.link}>

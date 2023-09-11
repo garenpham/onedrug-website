@@ -1,7 +1,6 @@
-import Image from 'next/image'
+import ScrollDownBtn from '@/components/shared/Buttons/ScrollDownBtn'
 import Link from 'next/link'
 import React from 'react'
-import { HiArrowDown } from 'react-icons/hi'
 import Gallery from './Gallery/Gallery'
 
 type Props = {}
@@ -26,11 +25,10 @@ const Welcome = (props: Props) => {
         </div>
       </div>
 
-      <Gallery/>
-      <Link
-        href='/#about'
-        className={`absolute bottom-0 left-[50%] h-[40px] w-[24px] rounded-[100px] bg-primary_light text-primary flex items-center justify-center border border-transparent hover:border-primary cursor-pointer active:scale-95 transition-transform ease-in`}>
-        <HiArrowDown />
+      <Gallery />
+
+      <Link href='/#aboutus' className='absolute bottom-0 left-[50%]'>
+        <ScrollDownBtn />
       </Link>
     </section>
   )

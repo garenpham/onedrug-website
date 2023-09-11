@@ -8,8 +8,8 @@ type Props = {}
 
 function Products({}: Props) {
   return (
-    <section className='w-screen px-[--root-margin] pt-[102px] flex flex-col items-center'>
-      <div className='flex w-full justify-between'>
+    <main className='w-screen px-[--root-margin] pt-[102px] flex flex-col items-center'>
+      <section className='flex w-full justify-between'>
         <div className='flex flex-col justify-between'>
           <div>
             <div
@@ -93,9 +93,9 @@ function Products({}: Props) {
             className='w-full h-full object-cover rounded-[9px]'
           />
         </div>
-      </div>
+      </section>
 
-      <div className={`mt-[140px] mb-[355px] flex gap-[67px]`}>
+      <section className={`mt-[140px] mb-[355px] flex gap-[67px]`}>
         <div className={`w-[549px] h-[611px]`}>
           <Image
             alt='Application'
@@ -205,8 +205,8 @@ function Products({}: Props) {
             </Button>
           </Link>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   )
 }
 

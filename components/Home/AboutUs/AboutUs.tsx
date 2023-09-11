@@ -7,7 +7,7 @@ type Props = {}
 
 function AboutUs({}: Props) {
   return (
-    <div id='about' className='flex justify-center py-[100px] bg-gray_2'>
+    <div id='aboutus' className='flex justify-center py-[100px] bg-gray_2'>
       <div className={`flex items-center gap-[80px]`}>
         <div className={`relative w-[413px] h-[392px]`}>
           <div className={`w-[368px] h-[344px] bg-slate-400 relative z-10`}>

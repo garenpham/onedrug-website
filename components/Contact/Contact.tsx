@@ -33,12 +33,12 @@ function Contact({}: Props) {
       </div>
 
       <div
-        className={`text-center text-secondary font-[700] text-[32px] relative z-10 uppercase`}>
+        className={`text-center text-secondary font-[700] text-[32px] z-10 uppercase`}>
         Contact Us
       </div>
 
       <div
-        className={`mt-[12px] mb-[59px] w-[597px] text-[18px] leading-[27px] text-gray_6 text-center relative z-10`}>
+        className={`mt-[12px] mb-[59px] w-[597px] text-[18px] leading-[27px] text-gray_6 text-center z-10`}>
         Get in touch with us to learn more about how OneDrug is reshaping the
         future of healthcare.
       </div>
