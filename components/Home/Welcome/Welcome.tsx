@@ -7,7 +7,7 @@ type Props = {}
 
 const Welcome = (props: Props) => {
   return (
-    <section className='px-[--root-margin] py-[100px] flex items-center justify-between relative'>
+    <section className='px-[--root-margin] py-[34px] flex items-center justify-between relative'>
       <div>
         <div
           className={`px-[10px] py-[17px] w-fit text-primary bg-primary_light text-[14px] font-[500] rounded-[5px] leading-[120%]`}>
