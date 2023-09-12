@@ -25,8 +25,9 @@ function About({}: Props) {
       </h1>
 
       <div
-        className={`mt-[12px] mb-[141px] w-[597px] text-[20px] leading-[27px] text-gray_6 text-center z-10`}>
-        We are focused on making personalized medicine possible across the globe
+        className={`mt-[12px] mb-[141px] w-[597px] text-[30px] leading-[27px] text-gray_6 text-center z-10`}>
+        We are focused on making personalized precision medicine possible across
+        the globe
       </div>
 
       <div className={`w-screen flex flex-col items-center`}>
