@@ -38,9 +38,9 @@ function Contact({}: Props) {
       </div>
 
       <div
-        className={`mt-[12px] mb-[59px] w-[597px] text-[18px] leading-[27px] text-gray_6 text-center z-10`}>
+        className={`mt-[12px] mb-[59px] w-[640px] text-[30px] font-[700] leading-[27px] text-center z-10`}>
         Get in touch with us to learn more about how OneDrug is reshaping the
-        future of healthcare.
+        future of healthcare
       </div>
 
       <div className={`flex items-center relative z-10`}>

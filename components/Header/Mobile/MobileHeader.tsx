@@ -3,6 +3,7 @@
 import Logo from '@/components/shared/Logo/Logo'
 import Image from 'next/image'
 import React from 'react'
+import MobileNav from './MobileNav'
 
 type Props = {}
 
@@ -13,12 +14,16 @@ function MobileHeader({}: Props) {
     setIsOpen((prev) => !prev)
   }
 
+  const setCloseFn = () => {
+    setIsOpen(false)
+  }
+
   const style = {
     icon: `active:scale-95 transition-transform ease-in`,
   }
   return (
-    <header className='block lg:hidden px-[20px] mt-[14px] w-screen'>
-      <div className={`flex items-center justify-between w-full`}>
+    <header className='block lg:hidden mt-[14px] w-screen'>
+      <div className={`flex px-[20px] items-center justify-between w-full`}>
         <Logo className='' />
         <Image
           alt='menu icon'
@@ -38,7 +43,7 @@ function MobileHeader({}: Props) {
         />
       </div>
 
-      <div className={`mt-[20px] flex flex-col gap-[16px]`}></div>
+      <MobileNav isOpen={isOpen} setCloseFn={setCloseFn} />
     </header>
   )
 }
