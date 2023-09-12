@@ -25,15 +25,15 @@ function About({}: Props) {
       </h1>
 
       <div
-        className={`mt-[12px] mb-[141px] w-[597px] text-[32px] leading-[27px] text-gray_6 text-center z-10`}>
+        className={`mt-[12px] mb-[141px] w-[597px] text-[20px] leading-[27px] text-gray_6 text-center z-10`}>
         We are focused on making personalized medicine possible across the globe
       </div>
 
       <div className={`w-screen flex flex-col items-center`}>
         <div className={`z-10 flex items-center gap-[30px]`}>
-          <div className={`w-[732px] flex flex-col gap-[1rem]`}>
+          <div className={`w-[500px] flex flex-col gap-[1rem]`}>
             <h2 className='text-black_1 text-[36px] font-[600]'>Our Vision</h2>
-            <p className='text-[32px] text-gray_10 leading-[38px]'>
+            <p className='text-[20px] text-gray_10 leading-[38px]'>
               Our vision is to lead the global transformation of healthcare by
               making personalized precision medicine accessible and impactful
               across every corner of the world.
@@ -60,11 +60,11 @@ function About({}: Props) {
             className='rounded-[26px]'
           />
 
-          <div className={`w-[672px] flex flex-col gap-[1rem] relative`}>
+          <div className={`w-[500px] flex flex-col gap-[1rem] relative`}>
             <h2 className={`text-black_1 text-[36px] font-[600]`}>
               About the Founder
             </h2>
-            <p className={`text-[32px] text-gray_10 leading-[38px]`}>
+            <p className={`text-[20px] text-gray_10 leading-[38px]`}>
               Chukwunonso Nwabufo is the founder of OneDrug and a multiple
               award-winning pharmacologist with over six years&apos; experience
               in drug development across academia and the pharmaceutical
@@ -93,9 +93,9 @@ function About({}: Props) {
         </div>
 
         <div className={`flex items-center gap-[65px]`}>
-          <div className={`w-[694px] flex flex-col gap-[1rem]`}>
+          <div className={`w-[500px] flex flex-col gap-[1rem]`}>
             <h2 className='text-black_1 text-[36px] font-[600]'>Our Mission</h2>
-            <p className='text-[32px] text-gray_10 leading-[38px]'>
+            <p className='text-[20px] text-gray_10 leading-[38px]'>
               Our mission is to pioneer innovative smart technology solutions
               that revolutionize healthcare by enabling personalized treatments.
             </p>
