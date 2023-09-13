@@ -5,7 +5,7 @@ type Props = {}
 
 function Products({}: Props) {
   return (
-    <div className='w-[1207px] h-[428px] flex items-center justify-center gap-[20px] bg-gray_4 rounded-xl'>
+    <div className='w-[337px] h-[875px] lg:w-[1207px] lg:h-[428px] flex flex-col lg:flex-row items-center justify-center gap-[60px] lg:gap-[20px] bg-gray_4 rounded-xl'>
       <Product
         src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694393596/shared-assets/landing%20page/8f20d9460fc09617f54e6ccccc1d76a8_fje7tn.jpg'
         title='Smart Point-of-Care Pharmacogenetic Test Device'

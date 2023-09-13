@@ -12,8 +12,8 @@ type Props = {
 
 function Product({ src, title, description, email }: Props) {
   return (
-    <div className='flex gap-[20px]'>
-      <div className={`h-[380px] w-[265px]`}>
+    <div className='flex flex-col lg:flex-row gap-[16px] lg:gap-[20px] items-center lg:items-start'>
+      <div className={`h-[184px] w-[233px] lg:h-[380px] lg:w-[265px]`}>
         <Image
           alt='Product Image'
           src={src}
@@ -23,18 +23,21 @@ function Product({ src, title, description, email }: Props) {
           className='object-cover w-full h-full rounded-[12px]'
         />
       </div>
-      <div>
+      <div className='flex flex-col items-center text-center'>
         <div
-          className={`w-[277px] text-gray text-[20px] font-[500] mt-[36px] leading-[120%]`}>
+          className={`w-[206px] lg:w-[277px] text-gray lg:text-[20px] font-[500] lg:mt-[36px] leading-[120%]`}>
           {title}
         </div>
-        <div className={`my-[20px] w-[276px] text-gray_8`}>{description}</div>
+        <div
+          className={`my-[12px] lg:my-[20px] w-[227px] lg:w-[276px] text-[13px] lg:text-base text-gray_8`}>
+          {description}
+        </div>
 
         <Link
           href={`mailto:${email}`}
           target='_blank'
-          className={`text-primary text-[18px] font-[500] flex items-center gap-[4px] hover:text-white active:scale-95 transition-transform ease-in`}>
-          Learn more <GoArrowRight className='text-[24px]' />
+          className={`text-primary text-[13px] lg:text-[18px] font-[500] flex items-center gap-[4px] hover:text-white active:scale-95 transition-transform ease-in`}>
+          Learn more <GoArrowRight className='text-[16px] lg:text-[24px]' />
         </Link>
       </div>
     </div>

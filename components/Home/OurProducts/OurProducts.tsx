@@ -6,10 +6,12 @@ type Props = {}
 
 function OurProducts({}: Props) {
   return (
-    <div className='pt-[100px] pb-[229px] flex flex-col items-center'>
-      <div className={`font-[500] text-secondary`}>OUR PRODUCTS</div>
+    <div className='pt-[40px] pb-[185px] lg:pt-[100px] lg:pb-[229px] flex flex-col items-center'>
+      <div className={`font-[500] text-secondary text-[13px] lg:text-base`}>
+        OUR PRODUCTS
+      </div>
       <div
-        className={`my-[12px] font-[600] text-[24px] w-[360px] text-center leading-[120%]`}>
+        className={`my-[12px] font-[600] text-[18px] lg:text-[24px] w-[270px] lg:w-[360px] text-center leading-[120%]`}>
         We are focused on making personalized precision medicine possible across
         the globe
       </div>
