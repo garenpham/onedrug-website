@@ -29,7 +29,7 @@ function About({}: Props) {
       </h1>
 
       <div
-        className={`mt-[12px] mb-[57px] lg:mb-[141px] w-[360px] lg:w-[640px] text-[24px] lg:text-[30px] leading-[27px] font-[700] text-center z-10`}>
+        className={`mt-[12px] mb-[57px] lg:mb-[141px] w-[340px] lg:w-[640px] text-[24px] lg:text-[30px] leading-[27px] font-[700] text-center z-10`}>
         We are focused on making personalized precision medicine possible across
         the globe
       </div>
@@ -37,7 +37,7 @@ function About({}: Props) {
       <div className={`w-screen flex flex-col items-center`}>
         <div
           className={`z-10 flex flex-col lg:flex-row items-center gap-[32px] lg:gap-[30px]`}>
-          <div className={`w-[342px] lg:w-[500px] flex flex-col gap-[1rem]`}>
+          <div className={`w-[310px] lg:w-[500px] flex flex-col gap-[1rem]`}>
             <h2 className={style.title}>Our Vision</h2>
             <p className={style.sub}>
               Our vision is to lead the global transformation of healthcare by
@@ -53,7 +53,7 @@ function About({}: Props) {
             }
             height={363}
             width={545}
-            className='rounded-[26px] w-[349px] h-[232px] lg:w-[545px] lg:h-[363px]'
+            className='rounded-[26px] w-[310px] h-[232px] lg:w-[545px] lg:h-[363px]'
           />
         </div>
 
@@ -66,12 +66,12 @@ function About({}: Props) {
               width={0}
               height={0}
               sizes='100%'
-              className='rounded-[26px] mt-[24px] object-cover lg:mt-0 w-[341px] h-[494px] lg:w-[529px] lg:h-[700px]'
+              className='rounded-[26px] mt-[24px] object-cover lg:mt-0 w-[310px] h-[444px] lg:w-[529px] lg:h-[700px]'
             />
           </div>
 
           <div
-            className={`w-[350px] lg:w-[572px] flex flex-col gap-[1rem] relative`}>
+            className={`w-[310px] lg:w-[572px] flex flex-col gap-[1rem] relative`}>
             <h2 className={style.title}>About the Founder</h2>
             <p className={style.sub}>
               Chukwunonso Nwabufo is the founder of OneDrug and a multiple
@@ -103,7 +103,7 @@ function About({}: Props) {
 
         <div
           className={`flex flex-col lg:flex-row items-center gap-[28px] lg:gap-[65px]`}>
-          <div className={`w-[349px] lg:w-[500px] flex flex-col gap-[1rem]`}>
+          <div className={`w-[310px] lg:w-[500px] flex flex-col gap-[1rem]`}>
             <h2 className={style.title}>Our Mission</h2>
             <p className={style.sub}>
               Our mission is to pioneer innovative smart technology solutions
@@ -117,7 +117,7 @@ function About({}: Props) {
             }
             height={363}
             width={545}
-            className='rounded-[26px] w-[350px] h-[252px] lg:w-[545px] lg:h-[363px]'
+            className='rounded-[26px] w-[310px] h-[252px] lg:w-[545px] lg:h-[363px]'
           />
         </div>
       </div>

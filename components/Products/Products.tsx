@@ -11,12 +11,12 @@ type Props = {}
 function Products({}: Props) {
   const style = {
     section:
-      'flex w-full flex-col-reverse lg:flex-row lg:justify-between gap-[44px] lg:gap-0',
+      'flex w-full flex-col-reverse items-center lg:items-start lg:flex-row lg:justify-between gap-[44px] lg:gap-0',
     container: `flex flex-col justify-between`,
-    img: `w-[350px] h-[292px] lg:w-[549px] lg:h-[611px]`,
+    img: `w-[310px] h-[292px] lg:w-[549px] lg:h-[611px]`,
     tag: `px-[10px] py-[14px] bg-primary_light text-primary text-[14px] h-fit w-fit leading-[120%] rounded-[5px]`,
-    title: `mt-[15px] mb-[14px] lg:mb-[10px] w-[359px] lg:w-[515px] text-[24px] lg:text-[36px] font-[600]`,
-    description: `text-gray_9 w-[340px] lg:w-[486px] text-[14px] lg:text-base`,
+    title: `mt-[15px] mb-[14px] lg:mb-[10px] w-[310px] lg:w-[515px] text-[24px] lg:text-[36px] font-[600]`,
+    description: `text-gray_9 w-[310px] lg:w-[486px] text-[14px] lg:text-base`,
     btn: `mt-[1.4rem] lg:mt-0`,
   }
   return (

@@ -15,8 +15,8 @@ function Contact({}: Props) {
   })
 
   const style = {
-    label: `text-gray_7 font-[600] mb-[5px] w-[353px] lg:w-fit`,
-    input: `w-[353px] lg:w-[482px] h-[52px] border border-gray_5 rounded-[8px] outline-none px-[20px] py-[12px] mb-[15px] lg:mb-[18px] focus:border-primary`,
+    label: `text-gray_7 font-[600] mb-[5px] w-[310px] lg:w-fit`,
+    input: `w-[310px] lg:w-[482px] h-[52px] border border-gray_5 rounded-[8px] outline-none px-[20px] py-[12px] mb-[15px] lg:mb-[18px] focus:border-primary`,
   }
   return (
     <main className='relative pt-[66px] pb-[61px] lg:pb-[100px] flex flex-col items-center'>
@@ -37,13 +37,13 @@ function Contact({}: Props) {
       </div>
 
       <div
-        className={`mt-[12px] mb-[37px] lg:mb-[141px] w-[360px] lg:w-[640px] text-[14px] lg:text-[24px] leading-[27px] text-gray_6 text-center z-10`}>
+        className={`mt-[12px] mb-[37px] lg:mb-[141px] w-[330px] lg:w-[640px] text-[14px] lg:text-[24px] leading-[27px] text-gray_6 text-center z-10`}>
         Get in touch with us to learn more about how OneDrug is reshaping the
         future of healthcare
       </div>
 
       <div className={`flex items-center flex-col lg:flex-row relative z-10`}>
-        <div className={`w-[353px] h-[372px] lg:w-[570px] lg:h-[620px]`}>
+        <div className={`w-[310px] h-[372px] lg:w-[570px] lg:h-[620px]`}>
           <Image
             alt='image'
             src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694330633/shared-assets/landing%20page/a13116884acf6d658737a77c98619e79_it2oeb.jpg'
@@ -104,7 +104,7 @@ function Contact({}: Props) {
             <Button
               form='contactus'
               size={'none'}
-              className='w-[353px] lg:w-full h-[52px]'>
+              className='w-[310px] lg:w-full h-[52px]'>
               Send
             </Button>
           </Link>
