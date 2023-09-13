@@ -7,7 +7,7 @@ type Props = {}
 function SocialsList({}: Props) {
   return (
     <div
-      className={`flex gap-[40px] h-fit items-center w-full lg:w-fit justify-center lg:justify-start mt-[28px] lg:mt-0`}>
+      className={`flex gap-[40px] h-fit items-center w-full lg:w-fit justify-center lg:justify-start mt-[3rem] lg:mt-0`}>
       <Link
         href='https://www.facebook.com/people/OneDrug/100089842672293/?mibextid=LQQJ4d'
         target='_blank'
