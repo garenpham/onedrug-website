@@ -44,7 +44,7 @@ function Footer({}: Props) {
 
       <div
         className={`mx-[--root-margin] ${
-          isCardRemoved ? 'pt-[111px]' : 'pt-[146px] lg:pt-[251px]'
+          isCardRemoved ? 'pt-[46px] lg:pt-[111px]' : 'pt-[146px] lg:pt-[251px]'
         } pb-[48px]`}>
         <div
           className={`w-full flex items-center lg:items-start justify-between`}>
