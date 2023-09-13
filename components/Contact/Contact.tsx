@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { IoMail } from 'react-icons/io5'
 import { Button } from '../shared/Buttons/Button'
 
 type Props = {}
@@ -16,12 +15,12 @@ function Contact({}: Props) {
   })
 
   const style = {
-    label: `text-gray_7 font-[600] mb-[5px]`,
-    input: `w-[482px] h-[52px] border border-gray_5 rounded-[8px] outline-none px-[20px] py-[12px] mb-[18px] focus:border-primary`,
+    label: `text-gray_7 font-[600] mb-[5px] w-[353px] lg:w-fit`,
+    input: `w-[353px] lg:w-[482px] h-[52px] border border-gray_5 rounded-[8px] outline-none px-[20px] py-[12px] mb-[15px] lg:mb-[18px] focus:border-primary`,
   }
   return (
-    <main className='relative pt-[66px] pb-[100px] flex flex-col items-center'>
-      <div className={`absolute w-screen h-[493px] top-0`}>
+    <main className='relative pt-[66px] pb-[61px] lg:pb-[100px] flex flex-col items-center'>
+      <div className={`absolute w-screen h-[240px] lg:h-[493px] top-0`}>
         <Image
           alt='background'
           src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694330290/shared-assets/landing%20page/map-base_1_kp9e6x.svg'
@@ -33,18 +32,18 @@ function Contact({}: Props) {
       </div>
 
       <div
-        className={`text-center text-secondary font-[700] text-[32px] z-10 uppercase`}>
+        className={`text-center text-secondary font-[700] text-[24px] lg:text-[32px] z-10 uppercase`}>
         Contact Us
       </div>
 
       <div
-        className={`mt-[12px] mb-[59px] w-[640px] text-[30px] font-[700] leading-[27px] text-center z-10`}>
+        className={`mt-[12px] mb-[37px] lg:mb-[141px] w-[360px] lg:w-[640px] text-[14px] lg:text-[24px] leading-[27px] text-gray_6 text-center z-10`}>
         Get in touch with us to learn more about how OneDrug is reshaping the
         future of healthcare
       </div>
 
-      <div className={`flex items-center relative z-10`}>
-        <div className={`w-[570px] h-[620px]`}>
+      <div className={`flex items-center flex-col lg:flex-row relative z-10`}>
+        <div className={`w-[353px] h-[372px] lg:w-[570px] lg:h-[620px]`}>
           <Image
             alt='image'
             src='https://res.cloudinary.com/dwqpulybv/image/upload/v1694330633/shared-assets/landing%20page/a13116884acf6d658737a77c98619e79_it2oeb.jpg'
@@ -55,13 +54,15 @@ function Contact({}: Props) {
           />
         </div>
 
-        <div className={`px-[45px] pt-[37px] pb-[49px] w-[571px] bg-white`}>
-          <div className={`text-[32px] font-[700]`}>Get in touch</div>
+        <div className={`px-[45px] pt-[37px] lg:pb-[49px] w-[571px] bg-white`}>
+          <div className={`text-[24px] lg:text-[32px] font-[700] text-center`}>
+            Get in touch
+          </div>
 
           <form
             action='#'
             id='contactus'
-            className='mb-[46px] mt-[48px] flex flex-col'>
+            className='mb-[1rem] mt-[1rem] lg:mb-[46px] lg:mt-[48px] flex flex-col items-center lg:items-baseline'>
             <label htmlFor='name' className={style.label}>
               Name
             </label>
@@ -98,8 +99,12 @@ function Contact({}: Props) {
           </form>
 
           <Link
-            href={`mailto:info@onedrug.co?subject=Inquiry by ${formData.name}&body=${formData.message}`}>
-            <Button form='contactus' size={'none'} className='w-full h-[52px]'>
+            href={`mailto:info@onedrug.co?subject=Inquiry by ${formData.name}&body=${formData.message}`}
+            className='w-full flex justify-center'>
+            <Button
+              form='contactus'
+              size={'none'}
+              className='w-[353px] lg:w-full h-[52px]'>
               Send
             </Button>
           </Link>
