@@ -22,16 +22,16 @@ function Footer({}: Props) {
         <div
           className={`absolute w-screen flex justify-center -top-[128.5px] text-white`}>
           <div
-            className={`px-[254px] py-[47px] bg-gray_4  rounded-[20px] flex flex-col items-center text-center`}>
+            className={`w-[337px] py-[2rem] lg:w-[1000px] lg:py-[47px] bg-gray_4  rounded-[20px] flex flex-col items-center text-center`}>
             <div
-              className={`w-[631px] mb-[32px] text-[36px] font-[600] leading-[120%]`}>
+              className={`w-[300px] lg:w-[631px] mb-[32px] text-[20px] lg:text-[36px] font-[600] leading-[120%]`}>
               Get in touch with us to learn more about how OneDrug is reshaping
               the future of healthcare
             </div>
 
             <Link
               href='/contact'
-              className={`px-[51px] py-[15px] rounded-[3px] border border-white w-fit text-[18px] font-[500] cursor-pointer active:scale-95 transition-transform ease-in`}>
+              className={`px-[51px] py-[15px] rounded-[3px] border border-white w-fit text-[13px] lg:text-[18px] font-[500] cursor-pointer active:scale-95 transition-transform ease-in`}>
               Contact us
             </Link>
           </div>
