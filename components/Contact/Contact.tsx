@@ -54,7 +54,8 @@ function Contact({}: Props) {
           />
         </div>
 
-        <div className={`px-[45px] pt-[37px] lg:pb-[49px] w-[571px] bg-white`}>
+        <div
+          className={`px-[45px] pt-[37px] lg:pb-[49px] w-[310px] lg:w-[571px] bg-white`}>
           <div className={`text-[24px] lg:text-[32px] font-[700] text-center`}>
             Get in touch
           </div>
