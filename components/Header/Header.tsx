@@ -19,7 +19,7 @@ const Header = (props: Props) => {
   return (
     <>
       <header className='hidden lg:flex px-[--root-margin] items-start justify-between bg-gray'>
-        <div className={`w-[300px] h-[170px] flex items-center justify-center`}>
+        <div className={`w-[300px] h-[170px] flex items-center`}>
           <Logo />
         </div>
         <nav className={`flex items-center gap-[20px]`}>

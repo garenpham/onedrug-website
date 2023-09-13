@@ -6,9 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --root-margin: 11%
+  --root-margin: 5%
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --root-margin: 11%
+  }
 }
